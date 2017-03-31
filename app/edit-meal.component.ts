@@ -55,6 +55,7 @@ export class EditMealComponent {
     @Output() doneButtonClickedSender = new EventEmitter();
 
     doneButtonClicked() {
+        this.childSelectedMeal.showEditForm = false;
         this.doneButtonClickedSender.emit();
     }
 }
