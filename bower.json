@@ -1,0 +1,17 @@
+{
+  "name": "meal-tracker",
+  "authors": [
+    "Nicholas Mead <nixter11@uw.edu>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
