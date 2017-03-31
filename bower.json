@@ -1,11 +1,8 @@
 {
-  "name": "meal-tracker",
-  "authors": [
-    "Nicholas Mead <nixter11@uw.edu>"
-  ],
+  "name": "meal",
   "description": "",
   "main": "",
-  "license": "MIT",
+  "license": "ISC",
   "homepage": "",
   "ignore": [
     "**/.*",
@@ -13,5 +10,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }
