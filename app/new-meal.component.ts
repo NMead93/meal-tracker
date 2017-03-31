@@ -15,29 +15,29 @@ import {Meal} from './Meal.model';
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user blue"></i></span>
-                            <input type="text" name="InputName" placeholder="Date" class="form-control" autofocus="autofocus" required>
+                            <input #name type="text" name="InputName" placeholder="Date" class="form-control" autofocus="autofocus" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-envelope blue"></i></span>
-                            <input type="email" name="InputEmail" placeholder="Meal" class="form-control" required>
+                            <input #meal type="text" name="InputEmail" placeholder="Meal" class="form-control" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-phone blue"></i></span>
-                            <input type="number" name="InputCno" placeholder="Calories" class="form-control" required>
+                            <input #calories type="number" name="InputCno" placeholder="Calories" class="form-control" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-comment blue"></i></span>
-                            <textarea name="InputMessage" rows="6" class="form-control" placeholder="Meal Details" type="text" required></textarea>
+                            <textarea #details name="InputMessage" rows="6" class="form-control" placeholder="Meal Details" type="text" required></textarea>
                         </div>
                     </div>
                     <div class="">
-                    <button type="submit" class="btn btn-info pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
+                    <button (click)="submitForm(name.value, meal.value, details.value, calories.value); name.value=''; meal.value=''; calories.value=''; details.value='';"class="btn btn-info pull-right">Add <span class="glyphicon glyphicon-send"></span></button>
                         <button type="reset" value="Reset" name="reset" class="btn">Reset <span class="glyphicon glyphicon-refresh"></span></button>
                     </div>
                 </div>
