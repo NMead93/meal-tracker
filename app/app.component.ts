@@ -5,10 +5,10 @@ import {Meal} from './Meal.model';
     selector: 'app-root',
     template: `
     <div class="container">
-    <h2>Table Example</h2>
+    <h2>Epicodus Meal Tracker</h2>
     <!--dropdown menu-->
     <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown Example
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Sort By
             <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -21,6 +21,7 @@ import {Meal} from './Meal.model';
     <br><br>
     <!--table-->
    <meal-list [childMealList]="masterMealList"></meal-list>
+   <new-meal></new-meal>
 </div>
     `
 })
