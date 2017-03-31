@@ -11,6 +11,7 @@ import {Meal} from './Meal.model';
              <th>Meal</th>
              <th>Details</th>
              <th>Calories</th>
+             <th>Actions</th>
          </tr>
      </thead>
      <tbody>
@@ -20,14 +21,8 @@ import {Meal} from './Meal.model';
         <td>{{currentMeal.details}}</td>
         <td>{{currentMeal.calories}}</td>
         <td><button class='btn btn-info' (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
+        <td><edit-meal [childSelectedMeal]="currentMeal"></edit-meal></td>
     </tr>
-         <tr>
-     <!--first example-->
-         <td>07/28/2016</td>
-         <td>Expenses</td>
-         <td>LLC</td>
-         <td>129756</td>
-         </tr>
 
      </tbody>
  </table>

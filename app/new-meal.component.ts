@@ -1,10 +1,10 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import {Meal} from './Meal.model';
 
 @Component({
     selector: 'new-meal',
     template: `
-    <div class="row">
+    <div class="row" *ngIf="newMeal">
             <div class="col-sm-6 col-centered">
                 <div class="panel panel-default">
                     <div class="panel-heading" >
@@ -49,6 +49,7 @@ import {Meal} from './Meal.model';
 })
 
 export class NewMealComponent {
+    @Input() newMeal: boolean;
     @Output() newMealSender = new EventEmitter();
 
     submitForm(date: string, name: string, details: string, calories: number) {
